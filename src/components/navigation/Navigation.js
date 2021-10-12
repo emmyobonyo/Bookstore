@@ -5,7 +5,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Home from '../homePage/Home';
+import BookList from '../bookList/BookList';
 import Categories from '../categories/Categories';
 
 function Navigation() {
@@ -33,7 +33,7 @@ function Navigation() {
             <Categories />
           </Route>
           <Route path="/">
-            <Home />
+            <BookList />
           </Route>
         </Switch>
       </div>
