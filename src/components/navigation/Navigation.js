@@ -24,6 +24,9 @@ function Navigation() {
               <Link to="/categories">CATEGORIES</Link>
             </ul>
           </div>
+          <div>
+            <i className="fas fa-user-circle" />
+          </div>
         </nav>
         <Switch>
           <Route path="/categories">
