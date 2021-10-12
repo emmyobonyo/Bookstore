@@ -10,7 +10,6 @@ function BookList() {
       <p>Emmanuel Obonyo</p>
       <button type="button">Comment</button>
       <button type="button">Remove</button>
-      <button type="button">Edit</button>
       <AddNewBook />
     </div>
   );
