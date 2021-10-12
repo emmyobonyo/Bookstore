@@ -1,13 +1,10 @@
 import './App.css';
+import Navigation from './components/navigation/Navigation';
 
 function App() {
   return (
     <div>
-      <header>
-        <p>
-          A random dope paragraph
-        </p>
-      </header>
+      <Navigation />
     </div>
   );
 }
