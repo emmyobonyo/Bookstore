@@ -1,11 +1,6 @@
 import React from 'react';
-import Select from 'react-select';
-
-const options = [
-  { value: 'Fiction', label: 'Fiction' },
-  { value: 'Non-fiction', label: 'Non-fiction' },
-  { value: 'Self-help', label: 'Self-help' },
-];
+import { useDispatch } from 'react-redux';
+import { addBook, removeBook } from '../../redux/books/books'
 
 function AddNewBook() {
   return (
@@ -13,7 +8,7 @@ function AddNewBook() {
       <h3>ADD NEW BOOK</h3>
       <form>
         <input type="text" placeholder="Book Title" />
-        <Select options={options} />
+        <inout type="text" placeholder="Author"/>
       </form>
     </div>
   );
