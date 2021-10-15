@@ -22,7 +22,7 @@ export const getBooks = createAsyncThunk(
       const button = document.createElement('button');
       button.innerHTML = 'Remove';
       button.type = 'button';
-      button.onclick = async function (){
+      button.onclick = async function () {
         await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BhqzrQ20oG4ih4qjaX67/books/${book}`, {
           method: 'DELETE',
           headers: {
