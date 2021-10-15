@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { getBooks, addBook } from '../../redux/books/books';
+import { getBooks, addBook, removeBook } from '../../redux/books/books';
 
 function AddNewBook() {
   const dispatch = useDispatch();
   const newBook = [];
+
   useEffect(() => {
     fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BhqzrQ20oG4ih4qjaX67/books')
       .then((res) => res.json())
@@ -25,6 +26,17 @@ function AddNewBook() {
           const button = document.createElement('button');
           button.innerHTML = 'Remove';
           button.type = 'button';
+          button.onclick = () => {
+            fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BhqzrQ20oG4ih4qjaX67/books/${book}`, {
+              method: 'DELETE',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+              },
+              body: JSON.stringify({ item_id: book }),
+            });
+            dispatch(removeBook(book));
+          };
           bookList.appendChild(div);
           div.appendChild(title);
           div.appendChild(category);
