@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { getBooks, addBook, removeBook } from '../../redux/books/books';
@@ -7,7 +7,7 @@ function AddNewBook() {
   const dispatch = useDispatch();
   const newBook = [];
 
-  useEffect(() => {
+  const getBook = () => {
     fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BhqzrQ20oG4ih4qjaX67/books')
       .then((res) => res.json())
       .then((data) => {
@@ -36,6 +36,7 @@ function AddNewBook() {
               body: JSON.stringify({ item_id: book }),
             });
             dispatch(removeBook(book));
+            bookList.removeChild(div);
           };
           bookList.appendChild(div);
           div.appendChild(title);
@@ -44,7 +45,7 @@ function AddNewBook() {
         });
       });
     dispatch(getBooks(newBook));
-  }, []);
+  };
 
   const postBook = () => {
     const id = uuidv4();
@@ -67,6 +68,7 @@ function AddNewBook() {
       category,
     }));
   };
+  getBook();
 
   return (
     <div>
