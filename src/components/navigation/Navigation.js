@@ -15,7 +15,7 @@ function Navigation() {
       <div>
         <nav>
           <div className="nav-links">
-            <h1 className="logo">
+            <h1 className="logos">
               <Link to="/">Bookstore CMS</Link>
             </h1>
             <ul>
