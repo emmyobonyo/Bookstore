@@ -26,6 +26,9 @@ input {
 
 #button {
   width: 20%;
+  background-color: #1590fd;
+  color: white;
+  border: none;
 }
 
 .div-new {
@@ -35,7 +38,7 @@ input {
   background-color: white;
   border: 1px solid lightgray;
   padding: 10px 20px;
-  height: 100px;
+  height: 120px;
   margin-bottom: 20px;
 }
 
@@ -44,5 +47,5 @@ input {
 }
 
 .category {
-  color: #1590FD;
+  color: #1590fd;
 }
