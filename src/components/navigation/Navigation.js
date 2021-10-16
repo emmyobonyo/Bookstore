@@ -7,16 +7,17 @@ import {
 } from 'react-router-dom';
 import BookList from '../bookList/BookList';
 import Categories from '../categories/Categories';
+import './Navigation.css';
 
 function Navigation() {
   return (
     <Router>
       <div>
         <nav>
-          <div>
-            <h3>
+          <div className="nav-links">
+            <h1 className="logo">
               <Link to="/">Bookstore CMS</Link>
-            </h3>
+            </h1>
             <ul>
               <li>
                 <Link to="/">BOOKS</Link>

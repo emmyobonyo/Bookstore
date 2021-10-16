@@ -1,0 +1,43 @@
+h3 {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.813rem 6.25rem;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.logo a {
+  color: #1590fd;
+}
+
+.fa-user-circle {
+  color: #1590fd;
+}
