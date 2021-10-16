@@ -7,7 +7,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid lightgray;
   margin-bottom: 20px;
   background-color: white;
 }
@@ -31,7 +31,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: gray;
 }
 
 .logo a {

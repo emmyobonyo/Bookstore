@@ -6,6 +6,16 @@
   font-family: 'Roboto Slab', serif;
 }
 
+html {
+  background-color: #f4f5f9;
+}
+
 body {
   background-color: #fafafa;
+  width: 90%;
+  margin: auto;
+  border: 1px solid lightgray;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

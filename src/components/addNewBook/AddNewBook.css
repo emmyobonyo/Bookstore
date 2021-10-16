@@ -5,6 +5,7 @@
 
 .book-list-heading {
   margin-bottom: 20px;
+  color: gray;
 }
 
 form {
@@ -25,7 +26,6 @@ input {
 }
 
 #button {
-  width: 20%;
   background-color: #1590fd;
   color: white;
   border: none;
@@ -33,8 +33,8 @@ input {
 
 .div-new {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
   border: 1px solid lightgray;
   padding: 10px 20px;
