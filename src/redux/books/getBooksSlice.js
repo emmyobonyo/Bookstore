@@ -34,6 +34,15 @@ export const getBooks = createAsyncThunk(
       chapter.innerText = 'CURRENT CHAPTER';
       const chapterNumber = document.createElement('p');
       chapterNumber.innerText = 'Chapter 7';
+      const div4 = document.createElement('div');
+      const commentButton = document.createElement('a');
+      commentButton.className = 'new-link';
+      commentButton.innerText = 'Comment';
+      commentButton.type = 'button';
+      const editButton = document.createElement('a');
+      editButton.className = 'new-link';
+      editButton.innerText = 'Edit';
+      editButton.type = 'button';
       const chapterButton = document.createElement('button');
       chapterButton.innerText = 'UPDATE PROGRESS';
       chapterButton.className = 'chapterButton';
@@ -58,7 +67,10 @@ export const getBooks = createAsyncThunk(
       div.appendChild(div3);
       div1.appendChild(title);
       div1.appendChild(category);
-      div1.appendChild(button);
+      div1.appendChild(div4);
+      div4.appendChild(commentButton);
+      div4.appendChild(editButton);
+      div4.appendChild(button);
       div2.appendChild(percentage);
       div2.appendChild(completed);
       div3.appendChild(chapter);

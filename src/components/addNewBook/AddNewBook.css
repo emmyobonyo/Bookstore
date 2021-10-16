@@ -63,6 +63,7 @@ input {
 .new-link {
   width: 20%;
   color: #1590fd;
+  margin-right: 10px;
 }
 
 .new-link:hover {
