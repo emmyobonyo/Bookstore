@@ -8,6 +8,8 @@ nav {
   align-items: center;
   padding: 15px 40px;
   border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
 .nav-links {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { getBooks } from '../../redux/books/getBooksSlice';
+import './AddNewBook.css';
 
 function AddNewBook() {
   const dispatch = useDispatch();
@@ -51,13 +52,13 @@ function AddNewBook() {
   };
 
   return (
-    <div>
-      <h3>ADD NEW BOOK</h3>
+    <div className="add-book-component">
       <div id="book-list" />
+      <h3 className="book-list-heading">ADD NEW BOOK</h3>
       <form>
         <input id="bookTitle" type="text" placeholder="Book Title" />
         <input id="category" type="text" placeholder="Category" />
-        <button type="button" onClick={postBook}>Add Book</button>
+        <button id="button" type="button" onClick={postBook}>Add Book</button>
       </form>
     </div>
   );

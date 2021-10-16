@@ -1,3 +1,29 @@
-h3 {
-  font-weight: bold;
+.add-book-component {
+  width: 94%;
+  margin: auto;
+}
+
+.book-list-heading {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 5px;
+}
+
+#bookTitle {
+  width: 45%;
+}
+
+#category {
+  width: 30%;
+}
+
+#button {
+  width: 20%;
 }
