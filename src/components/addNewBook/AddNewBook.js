@@ -44,6 +44,14 @@ function AddNewBook() {
     chapter.innerText = 'CURRENT CHAPTER';
     const chapterNumber = document.createElement('p');
     chapterNumber.innerText = 'Chapter 7';
+    const div4 = document.createElement('div');
+    const commentButton = document.createElement('a');
+    commentButton.className = 'new-link';
+    commentButton.innerText = 'Comment';
+    commentButton.type = 'button';
+    const editButton = document.createElement('a');
+    editButton.className = 'new-link';
+    editButton.innerText = 'Edit';
     const chapterButton = document.createElement('button');
     chapterButton.innerText = 'UPDATE PROGRESS';
     chapterButton.className = 'chapterButton';
@@ -68,7 +76,10 @@ function AddNewBook() {
     div.appendChild(div3);
     div1.appendChild(newTitle);
     div1.appendChild(newCategory);
-    div1.appendChild(button);
+    div1.appendChild(div4);
+    div4.appendChild(commentButton);
+    div4.appendChild(editButton);
+    div4.appendChild(button);
     div2.appendChild(percentage);
     div2.appendChild(completed);
     div3.appendChild(chapter);
