@@ -6,7 +6,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 1.813rem 6.25rem;
   border-bottom: 1px solid lightgray;
   margin-bottom: 20px;
   background-color: white;
@@ -15,7 +15,7 @@ nav {
 .nav-links {
   display: flex;
   align-items: center;
-  width: 30%;
+  width: 45%;
   justify-content: space-between;
 }
 
@@ -26,7 +26,7 @@ ul {
 
 li {
   float: left;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 a {
