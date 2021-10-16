@@ -15,11 +15,14 @@ export const getBooks = createAsyncThunk(
       });
       const bookList = document.getElementById('book-list');
       const div = document.createElement('div');
+      div.className = 'div-new';
       const title = document.createElement('h2');
       title.innerHTML = data[book][0].title;
       const category = document.createElement('p');
       category.innerHTML = data[book][0].category;
+      category.className = 'category';
       const button = document.createElement('button');
+      button.className = 'new-button';
       button.innerHTML = 'Remove';
       button.type = 'button';
       button.onclick = async function () {

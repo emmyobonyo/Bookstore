@@ -25,11 +25,14 @@ function AddNewBook() {
       .then((res) => res);
     const bookList = document.getElementById('book-list');
     const div = document.createElement('div');
+    div.className = 'div-new';
     const newTitle = document.createElement('h2');
     newTitle.innerHTML = document.getElementById('bookTitle').value;
     const newCategory = document.createElement('p');
     newCategory.innerHTML = document.getElementById('category').value;
+    newCategory.className = 'category';
     const button = document.createElement('button');
+    button.className = 'new-button';
     button.innerHTML = 'Remove';
     button.type = 'button';
     button.onclick = async function () {

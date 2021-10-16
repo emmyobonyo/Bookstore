@@ -27,3 +27,22 @@ input {
 #button {
   width: 20%;
 }
+
+.div-new {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.new-button {
+  width: 20%;
+}
+
+.category {
+  color: #1590FD;
+}
