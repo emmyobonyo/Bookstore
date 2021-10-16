@@ -8,7 +8,7 @@ function AddNewBook() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBooks());
-  }, []);
+  });
 
   const postBook = () => {
     const id = uuidv4();
