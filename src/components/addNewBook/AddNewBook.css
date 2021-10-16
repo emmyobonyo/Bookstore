@@ -2,6 +2,16 @@
   margin: 0 6.25rem;
 }
 
+.image-src {
+  width: 100px;
+  height: 100px;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+}
+
 .book-list-heading {
   margin-bottom: 20px;
   color: gray;

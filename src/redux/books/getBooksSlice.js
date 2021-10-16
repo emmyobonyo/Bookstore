@@ -23,9 +23,14 @@ export const getBooks = createAsyncThunk(
       const category = document.createElement('p');
       category.innerHTML = data[book][0].category;
       category.className = 'category';
+      const imageDiv = document.createElement('div');
+      imageDiv.className = 'image-div';
+      const image = document.createElement('img');
+      image.src = 'https://i.stack.imgur.com/2UAyy.png';
+      image.className = 'image-src';
       const div2 = document.createElement('div');
       const percentage = document.createElement('h2');
-      percentage.innerText = '67%';
+      percentage.innerText = '15%';
       const completed = document.createElement('p');
       completed.innerText = 'Completed';
       const div3 = document.createElement('div');
@@ -63,7 +68,7 @@ export const getBooks = createAsyncThunk(
       };
       bookList.appendChild(div);
       div.appendChild(div1);
-      div.appendChild(div2);
+      div.appendChild(imageDiv);
       div.appendChild(div3);
       div1.appendChild(title);
       div1.appendChild(category);
@@ -71,6 +76,8 @@ export const getBooks = createAsyncThunk(
       div4.appendChild(commentButton);
       div4.appendChild(editButton);
       div4.appendChild(button);
+      imageDiv.appendChild(image);
+      imageDiv.appendChild(div2);
       div2.appendChild(percentage);
       div2.appendChild(completed);
       div3.appendChild(chapter);
