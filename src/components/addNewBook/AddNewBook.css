@@ -1,3 +1,92 @@
-h3 {
-  font-weight: bold;
+.add-book-component {
+  margin: 0 6.25rem;
+}
+
+.image-src {
+  width: 100px;
+  height: 100px;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+}
+
+.book-list-heading {
+  margin-bottom: 20px;
+  color: gray;
+  border-top: 1px solid lightgray;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 5px;
+}
+
+#bookTitle {
+  width: 45%;
+}
+
+#category {
+  width: 30%;
+}
+
+#button {
+  background-color: #1590fd;
+  color: white;
+  border: none;
+  width: 20%;
+}
+
+.div-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.div-new-inner {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.div-new-inner-button {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.new-link {
+  width: 20%;
+  color: #1590fd;
+  margin-right: 10px;
+}
+
+.new-link:hover {
+  cursor: pointer;
+}
+
+.category {
+  color: #1590fd;
+}
+
+.chapterButton {
+  background-color: #1590fd;
+  color: white;
+  border: none;
+  padding: 5px;
 }

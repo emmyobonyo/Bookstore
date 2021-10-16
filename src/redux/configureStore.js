@@ -1,14 +1,16 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { createStore, applyMiddleware, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import booksReducer from './books/books';
+import booksReducer from './books/getBooksSlice';
 
 const reducer = combineReducers({
-  booksReducer,
+  books: booksReducer,
 });
 
 const store = createStore(
   reducer,
-  applyMiddleware(logger),
+  applyMiddleware(logger, thunk),
 );
 
 export default store;

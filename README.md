@@ -6,18 +6,16 @@
 
 ![Home Page](./public/home.png)
 
-- A User can Add a Book that they are reading.
-- A User can Update their reading progress in percentages.
+- A User can Add a Book that they are reading. On Page refresh, the book is fetched from the API and will be added to the list.
 
 ## Built With
 
 - JSX, CSS
 - React
-<!--
-## Live Demo
 
-- Netlify: https://math-magicians-react.netlify.app/
-- Heroku: https://math-magicians-js.herokuapp.com/ -->
+<!-- ## Live Demo
+
+- [Netlify](https://bookstore-react-redux.netlify.app/) -->
 
 # Set Up
 ## Clone This Repository
