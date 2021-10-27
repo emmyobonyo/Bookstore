@@ -11,7 +11,7 @@
 ## Built With
 
 - JSX, CSS
-- React
+- React, Redux
 
 <!-- ## Live Demo
 
