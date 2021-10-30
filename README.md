@@ -13,9 +13,9 @@
 - JSX, CSS
 - React, Redux
 
-<!-- ## Live Demo
+ ## Live Demo
 
-- [Netlify](https://bookstore-react-redux.netlify.app/) -->
+- [Netlify](https://bookstore-react-redux.netlify.app/) 
 
 # Set Up
 ## Clone This Repository
